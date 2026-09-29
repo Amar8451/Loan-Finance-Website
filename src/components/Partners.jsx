@@ -138,10 +138,6 @@ export default function Partners() {
                     <BankLogoItem code={bank.short} name={bank.name} className="h-9 w-auto max-w-full object-contain" />
                   </div>
 
-                  <div className="flex items-center justify-between text-[10px] text-amber-400 font-mono font-bold mb-1">
-                    <span>PSU #{bank.code}</span>
-                    <span className="text-slate-500 font-normal">{bank.short}</span>
-                  </div>
                   <h4 className="text-xs font-bold text-white group-hover:text-amber-300 transition-colors">
                     {bank.name}
                   </h4>
@@ -194,10 +190,6 @@ export default function Partners() {
                     <BankLogoItem code={bank.short} name={bank.name} className="h-9 w-auto max-w-full object-contain" />
                   </div>
 
-                  <div className="flex items-center justify-between text-[10px] text-royal-400 font-mono font-bold mb-1">
-                    <span>{bank.code}</span>
-                    <span className="text-slate-500 font-normal">{bank.short}</span>
-                  </div>
                   <h4 className="text-xs font-bold text-white group-hover:text-amber-300 transition-colors">
                     {bank.name}
                   </h4>
