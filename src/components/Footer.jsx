@@ -107,12 +107,12 @@ export default function Footer() {
             <h4 className="text-sm font-bold uppercase tracking-wider text-white">Loan Solutions</h4>
             <ul className="space-y-2.5 text-xs">
               {[
-                { name: "Home Loan Transfer", href: "#balance-transfer" },
-                { name: "Personal Loan Consolidation", href: "#balance-transfer" },
-                { name: "Business Expansion Loan", href: "#loan-solutions" },
-                { name: "Vehicle Financing", href: "#loan-solutions" },
+                { name: "Home Loan", href: "#loan-solutions" },
+                { name: "Home Loan Balance Transfer", href: "#balance-transfer" },
+                { name: "Personal Loan", href: "#loan-solutions" },
+                { name: "Personal Loan Balance Transfer", href: "#balance-transfer" },
+                { name: "Business Loan", href: "#loan-solutions" },
                 { name: "Fresh Property Purchase", href: "#loan-solutions" },
-                { name: "Instant Cash Loans", href: "#loan-solutions" },
               ].map((item, idx) => (
                 <li key={idx}>
                   <a

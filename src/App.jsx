@@ -13,6 +13,7 @@ import Partners from './components/Partners';
 import About from './components/About';
 import Contact from './components/Contact';
 import FloatingContact from './components/FloatingContact';
+import LoanSanctionPopup from './components/LoanSanctionPopup';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -29,44 +30,47 @@ export default function App() {
 
       {/* Main Content Sections */}
       <main className="flex-grow">
-        {/* 1. Hero Section */}
+        {/* 1. Hero Section with Finance Notification Carousel & CIBIL Metric */}
         <Hero />
 
-        {/* 2. Zero-Cost Trust Guarantee */}
+        {/* 2. Zero-Cost Trust Guarantee & CIBIL Cases Feature Card */}
         <TrustGuarantee />
 
-        {/* 3. Revenue Model */}
+        {/* 3. Transparent Revenue Model */}
         <RevenueModel />
 
-        {/* 4. Strategic Balance Transfer */}
+        {/* 4. Strategic Balance Transfer (Separated Home Loan & Personal Loan Transfer + Example) */}
         <BalanceTransfer onSelectLoan={handleSelectLoan} />
 
-        {/* Interactive Savings Calculator */}
-        <section className="bg-slate-900 py-10 px-4 sm:px-6 lg:px-8 border-b border-navy-800">
+        {/* 5. Interactive Bank Rate Savings Calculator */}
+        <section id="calculator" className="bg-slate-900 py-10 px-4 sm:px-6 lg:px-8 border-b border-navy-800">
           <SavingsCalculator onSelectLoan={handleSelectLoan} />
         </section>
 
-        {/* 5. Case Study */}
+        {/* 6. Case Study */}
         <CaseStudy />
 
-        {/* 6. Comprehensive Multi-Loan Universe */}
+        {/* 7. Comprehensive Loan Solutions (6 Core Services) */}
         <LoanSolutions onSelectLoan={handleSelectLoan} />
 
-        {/* 7. Why Customers Choose Siyaram */}
+        {/* 8. Why Customers Choose Siyaram */}
         <WhyChooseUs />
 
-        {/* 8. Simple Application Process */}
+        {/* 9. Simple Application Process */}
         <Process />
 
-        {/* 9. Banking & Financial Network */}
+        {/* 10. Banking & Financial Network (Government Banks First, Private Banks Second, NBFCs Third) */}
         <Partners />
 
-        {/* 10. About Section */}
+        {/* 11. About Section */}
         <About />
 
-        {/* 11. Contact / Lead Section */}
+        {/* 12. Contact / Lead Section */}
         <Contact selectedLoanCategory={selectedLoanCategory} />
       </main>
+
+      {/* Promotional Loan Sanction Floating Notification (Configurable, Responsive) */}
+      <LoanSanctionPopup onSelectLoan={handleSelectLoan} />
 
       {/* Floating CTA Widget (WhatsApp & Call) */}
       <FloatingContact />

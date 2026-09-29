@@ -88,19 +88,19 @@ export default function CaseStudy() {
               </div>
             </div>
 
-            {/* Siyaram Work Done Card */}
+            {/* Optimized Institutional Rate Match Card */}
             <div className="rounded-2xl p-6 bg-gradient-to-b from-royal-900/60 to-navy-900/90 border-2 border-emerald-500/50 shadow-glow relative">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-amber-300">Optimized Solution</span>
                 <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
-                  Siyaram Work Done
+                  Institutional Match
                 </span>
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-baseline justify-between">
                   <div>
-                    <div className="text-xs text-slate-400">Optimized Rate of Interest</div>
+                    <div className="text-xs text-slate-400">Optimized Bank Rate</div>
                     <div className="text-2xl font-extrabold text-emerald-400">7.00% ROI</div>
                   </div>
                   <span className="text-xs font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
@@ -135,7 +135,7 @@ export default function CaseStudy() {
                 <tr>
                   <th scope="col" className="px-5 py-3.5 font-bold">Lending Parameter</th>
                   <th scope="col" className="px-5 py-3.5 font-bold text-right text-red-300">Standard Market Bank</th>
-                  <th scope="col" className="px-5 py-3.5 font-bold text-right text-emerald-300">Siyaram Work Done</th>
+                  <th scope="col" className="px-5 py-3.5 font-bold text-right text-emerald-300">Optimized Bank Match</th>
                   <th scope="col" className="px-5 py-3.5 font-bold text-right text-amber-300">Total Impact</th>
                 </tr>
               </thead>

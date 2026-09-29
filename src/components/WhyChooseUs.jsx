@@ -1,5 +1,5 @@
 import React from 'react';
-import { BadgePercent, Building2, Compass, History, Layers, SearchCheck, Landmark, Sparkles } from 'lucide-react';
+import { BadgePercent, Building2, Compass, History, Layers, SearchCheck, Landmark, Sparkles, BadgeCheck } from 'lucide-react';
 import { whyChooseCards } from '../data/loanData';
 
 const iconMap = {
@@ -9,6 +9,7 @@ const iconMap = {
   History: History,
   Layers: Layers,
   SearchCheck: SearchCheck,
+  BadgeCheck: BadgeCheck,
 };
 
 export default function WhyChooseUs() {
@@ -29,7 +30,7 @@ export default function WhyChooseUs() {
             Why Customers <span className="text-gradient-gold">Choose Siyaram</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-            Rooted in our verified track record since 2012, facilitating over ₹10,000 Cr in disbursements with unwavering client transparency.
+            Rooted in our verified track record since 2012, facilitating over ₹10,000 Cr in disbursements with unwavering client transparency and 0% customer fees.
           </p>
         </div>
 
@@ -48,7 +49,7 @@ export default function WhyChooseUs() {
 
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {whyChooseCards.map((item, idx) => {
+            {whyChooseCards.map((item) => {
               const IconComp = iconMap[item.icon] || Landmark;
 
               return (

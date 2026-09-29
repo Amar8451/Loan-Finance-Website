@@ -1,12 +1,12 @@
 import React from 'react';
-import { ShieldCheck, Building2, Eye, Users, CheckCircle, Sparkles } from 'lucide-react';
-import { trustGuaranteeFeatures } from '../data/loanData';
+import { ShieldCheck, Building2, Eye, BadgeCheck, CheckCircle, Sparkles, CreditCard, Info } from 'lucide-react';
+import { trustGuaranteeFeatures, cibilInfo } from '../data/loanData';
 
 const iconMap = {
   ShieldCheck: ShieldCheck,
   Building2: Building2,
   Eye: Eye,
-  Users: Users,
+  BadgeCheck: BadgeCheck,
 };
 
 export default function TrustGuarantee() {
@@ -39,7 +39,7 @@ export default function TrustGuarantee() {
           </div>
 
           <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-            “Our professional consulting, comprehensive profiles, and operational balance assistance are <span className="text-white font-semibold underline decoration-amber-400/60 decoration-2">100% free for the client</span>.”
+            “Our professional consulting, comprehensive profile preparation, and institutional matching are <span className="text-white font-semibold underline decoration-amber-400/60 decoration-2">100% free for the client</span>.”
           </p>
         </div>
 
@@ -85,6 +85,43 @@ export default function TrustGuarantee() {
               </div>
             );
           })}
+        </div>
+
+        {/* Dedicated CIBIL Cases Highlight Card (Requirement 13) */}
+        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-navy-900/90 via-navy-850 to-navy-900/90 border border-royal-500/40 shadow-xl max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-start gap-4">
+            <div className="w-14 h-14 rounded-2xl bg-amber-400/15 border border-amber-400/30 text-amber-400 flex items-center justify-center shrink-0 shadow-md">
+              <CreditCard className="w-7 h-7" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-royal-600/30 text-royal-200 border border-royal-500/30">
+                  {cibilInfo.cardTitle}
+                </span>
+                <span className="text-xs font-bold text-amber-400">
+                  {cibilInfo.cardSubtitle}
+                </span>
+              </div>
+              <h3 className="text-xl font-bold text-white font-heading">
+                {cibilInfo.heading}
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
+                {cibilInfo.supportingText}
+              </p>
+              <p className="text-[11px] text-slate-400 mt-2 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-slate-500 shrink-0" />
+                <span>{cibilInfo.disclaimer}</span>
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="#contact"
+            className="shrink-0 px-5 py-3 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-navy-950 font-bold text-xs shadow-md transition-all flex items-center gap-2"
+          >
+            <span>Consult Loan Profile</span>
+            <CheckCircle className="w-4 h-4" />
+          </a>
         </div>
 
       </div>

@@ -6,7 +6,7 @@ export const contactInfo = {
   phoneClean: "+918291919192",
   email: "siyaramloans4u@gmail.com",
   experience: "Since 2012",
-  disbursement: "₹10,000 Cr+",
+  disbursement: "₹10,00,000 Cr+",
   partnersCount: "270+",
   coverage: "Pan-India Cases",
   customerFees: "0%",
@@ -14,19 +14,43 @@ export const contactInfo = {
 
 export const navLinks = [
   { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Loan Solutions", href: "#loan-solutions" },
   { name: "Balance Transfer", href: "#balance-transfer" },
-  { name: "Case Study", href: "#case-study" },
-  { name: "Partners", href: "#partners" },
+  { name: "Calculator", href: "#savings-calculator" },
+  { name: "Loan Solutions", href: "#loan-solutions" },
+  { name: "Bank Partners", href: "#partners" },
+  { name: "About", href: "#about" },
   { name: "Contact", href: "#contact" },
 ];
 
 export const heroStats = [
-  { value: "₹10,000 Cr+", label: "Disbursement Done", prefix: "₹", targetNumber: 10000, suffix: " Cr+", subtext: "Processed across institutional networks" },
-  { value: "270+", label: "Banking & Financial Partners", targetNumber: 270, suffix: "+", subtext: "National & private institutional reach" },
-  { value: "Since 2012", label: "Industry Experience", targetNumber: 2012, isYear: true, subtext: "14+ years of financial consulting" },
   { value: "0%", label: "Customer Fees", targetNumber: 0, suffix: "%", subtext: "100% zero-cost consultation guarantee" },
+  { value: "270+", label: "Institutional Network", targetNumber: 270, suffix: "+", subtext: "National & private institutional reach" },
+  { value: "₹10,000 Cr+", label: "Disbursement Done", prefix: "₹", targetNumber: 10000, suffix: " Cr+", subtext: "Facilitated across institutional channels" },
+  { value: "Since 2012", label: "Industry Experience", targetNumber: 2012, isYear: true, subtext: "14+ years of financial consulting" },
+  { value: "CIBIL Cases", label: "Profile Assistance", isCibil: true, subtext: "Subject to lender policies & eligibility" },
+];
+
+export const heroNotifications = [
+  {
+    icon: "Home",
+    title: "Home Loan Options",
+    description: "Explore competitive bank rates from 7.00% ROI"
+  },
+  {
+    icon: "RefreshCw",
+    title: "Personal Loan Balance Transfer",
+    description: "Potential EMI & interest savings on existing loans"
+  },
+  {
+    icon: "BadgeCheck",
+    title: "CIBIL Cases Handled",
+    description: "Loan profile assessment & institutional matching"
+  },
+  {
+    icon: "Landmark",
+    title: "Banking Network",
+    description: "Government + Private institutional network reach"
+  }
 ];
 
 export const trustGuaranteeFeatures = [
@@ -53,10 +77,10 @@ export const trustGuaranteeFeatures = [
   },
   {
     number: "04",
-    title: "Client-First Approach",
-    description: "Dedicated focus on identifying the most suitable financing profile without backend customer surcharges.",
-    icon: "Users",
-    badge: "Unbiased Advisory"
+    title: "CIBIL Cases Handled",
+    description: "Assistance is available for eligible customers with CIBIL-related loan-profile requirements, subject to lender policies.",
+    icon: "BadgeCheck",
+    badge: "Profile Guidance"
   },
 ];
 
@@ -94,46 +118,65 @@ export const revenueModelSteps = [
 export const balanceTransferOptions = [
   {
     id: "home-loan",
-    title: "Home Loan Transfer",
+    title: "Home Loan Balance Transfer",
+    subtitle: "Switch to Lower Interest Rates on Your Existing Mortgage",
+    marketingMessage: "Substantial interest savings over long-term home loan tenures.",
     icon: "Home",
     badge: "High Savings Impact",
-    highlight: "Starting at 7.00% Lowest ROI",
+    highlight: "Competitive Bank Rates from 7.00% ROI",
     rate: "7.00%",
-    rateSuffix: "Lowest ROI",
+    rateSuffix: "Starting Bank Benchmark",
     points: [
-      "Migrate existing high-interest mortgages to competitive rates",
-      "Reduce monthly EMI burden substantially",
-      "Potentially shorten total loan repayment duration",
-      "Top-up loan facilities available for additional liquidity",
+      "Migrate existing high-interest mortgages to competitive bank interest rates",
+      "Significantly reduce monthly EMI outflow or shorten total repayment tenure",
+      "Top-up loan facility available for home renovation or liquidity, subject to eligibility",
+      "Professional liaison and end-to-end documentation assistance"
     ],
-    ctaText: "Explore Home Loan Transfer",
+    ctaText: "Check Balance Transfer Eligibility",
+    calculatorCta: "Calculate Home Loan Savings",
     category: "Home Loan Transfer"
   },
   {
     id: "personal-loan",
-    title: "Personal Loan Consolidation",
-    icon: "Briefcase",
-    badge: "Debt Restructuring",
-    highlight: "Lowest Market ROI Matching",
-    rate: "Lowest ROI",
-    rateSuffix: "Market Matching",
+    title: "Personal Loan Balance Transfer",
+    subtitle: "Transfer Your Existing Personal Loan to a Lower Interest Rate",
+    marketingMessage: "Reduce EMI. Save Interest. Improve Your Monthly Cash Flow.",
+    icon: "RefreshCw",
+    badge: "Cash Flow Booster",
+    highlight: "Lower ROI Bank Benchmarks",
+    rate: "Lower ROI",
+    rateSuffix: "Competitive Bank Options",
     points: [
-      "Consolidate multiple high-interest debts into one organized loan",
-      "Combine scattered credit balances across cards and lenders",
-      "Reduce overall weighted interest burden",
-      "Move toward a single streamlined monthly payment cycle",
+      "Lower EMI Potential: A lower interest rate may reduce monthly repayment burden",
+      "Interest Savings: A lower ROI can potentially reduce total interest payable over remaining tenure",
+      "Flexible Tenure: Choose suitable remaining repayment tenure based on lender eligibility",
+      "Top-Up Loan: Additional funds along with balance transfer, subject to eligibility",
+      "Better Cash Flow: Free up monthly cash flow for other household expenses or investments",
+      "Loan Consolidation: Multiple eligible loans may be consolidated into one single EMI",
+      "Quick Processing: Eligible customers may receive faster processing depending on lender norms"
     ],
-    ctaText: "Explore Personal Loan Consolidation",
-    category: "Personal Loan Consolidation"
+    ctaText: "Check Your Balance Transfer Eligibility",
+    calculatorCta: "Calculate Your Savings",
+    category: "Personal Loan Balance Transfer"
   }
 ];
+
+export const personalLoanExample = {
+  heading: "See How a Lower Rate Can Help",
+  outstandingAmount: "₹8,00,000",
+  currentROI: "14%",
+  potentialROI: "10%",
+  explanation: "Potential savings depend on the remaining tenure, current EMI, foreclosure charges, processing charges and other applicable costs.",
+  disclaimer: "Compare total loan cost, including applicable processing and foreclosure charges, rather than comparing ROI alone. Do not rely on fixed guaranteed savings without assessing individual profile parameters.",
+  generalDisclaimer: "Interest rates, savings, tenure, top-up availability and processing timelines are subject to lender policies, customer eligibility and applicable charges."
+};
 
 export const caseStudyData = {
   title: "Financial Impact: Balance Transfer Case Study",
   subtitle: "The Math of Optimization",
-  quote: "A simple 2.00% reduction in your interest baseline generates significant potential savings over the lifetime of a long-term mortgage.",
-  disclaimer: "Note: The figures below illustrate a verified case study example from our presentation. Actual terms, savings, and sanction parameters depend on individual borrower eligibility and panel partner guidelines.",
-  totalSavings: "₹15,00,000",
+  quote: "A 2.00% reduction in your interest baseline generates significant potential savings over the lifetime of a long-term mortgage.",
+  disclaimer: "Note: The figures below illustrate a verified case study example. Actual terms, savings, and sanction parameters depend on individual borrower eligibility and panel lender guidelines.",
+  totalSavings: "₹14,93,000",
   parameters: [
     {
       param: "Principal Loan Value",
@@ -152,7 +195,7 @@ export const caseStudyData = {
       param: "Total Interest Payable — 20 Yrs",
       market: "₹57,96,000",
       siyaram: "₹43,03,000",
-      diff: "₹14,93,000 Saved",
+      diff: "₹14,93,000 Saved (~₹15L)",
       isHighlight: true,
     },
   ],
@@ -160,48 +203,77 @@ export const caseStudyData = {
   siyaramTotal: "₹93,03,000",
 };
 
+// 6 Core Loan Services as per Requirement 6
 export const loanSolutions = [
   {
-    id: "instant-cash",
-    title: "Instant Cash Loans",
-    category: "Personal & Urgent",
-    description: "Highly specialized rapid cash solutions for sudden operational or personal financial requirements with swift documentation.",
-    icon: "Wallet",
-    features: ["Rapid Assessment", "Minimal Documentation", "Fast Disbursement Window"],
-    color: "from-blue-600 to-indigo-700",
-    glow: "shadow-blue-500/20"
-  },
-  {
-    id: "business-expansion",
-    title: "Business Expansion",
-    category: "Commercial & MSME",
-    description: "Tailored financing for MSMEs, enterprise growth, business expansion, infrastructure upgrades, inventory, and working capital needs.",
-    icon: "TrendingUp",
-    features: ["Working Capital Solutions", "Machinery & Infrastructure", "Customized Tenures"],
-    color: "from-slate-900 to-navy-800",
-    glow: "shadow-navy-600/20"
-  },
-  {
-    id: "vehicle-financing",
-    title: "Vehicle Financing",
-    category: "Automotive & Fleet",
-    description: "Financing options structured for commercial fleet vehicles, personal four-wheelers, and two-wheelers with flexible tenure terms.",
-    icon: "Car",
-    features: ["Commercial Vehicles", "Personal 4-Wheelers", "Two-Wheeler Solutions"],
-    color: "from-blue-700 to-royal-800",
-    glow: "shadow-royal-500/20"
-  },
-  {
-    id: "fresh-property",
-    title: "Fresh Property Purchase",
-    category: "Real Estate & Housing",
-    description: "Financing options for residential property acquisitions, new home purchases, housing construction, and property modernization.",
+    id: "home-loan",
+    title: "Home Loan",
+    category: "Housing & Real Estate",
+    description: "Financing options for purchase of ready or under-construction residential properties, plot purchases, and home construction.",
     icon: "Home",
-    features: ["Residential Purchase", "Home Construction", "Modernization Top-Up"],
-    color: "from-indigo-900 to-navy-950",
-    glow: "shadow-indigo-500/20"
+    features: ["Competitive Bank Rates", "Tenures up to 30 Years", "Tax Benefit Assistance"],
+    color: "from-blue-600 to-indigo-700",
+    badge: "Popular"
+  },
+  {
+    id: "home-loan-balance-transfer",
+    title: "Home Loan Balance Transfer",
+    category: "Refinancing & Savings",
+    description: "Transfer your high-interest ongoing home loan to leading institutions at lower ROI, with option for top-up liquidity.",
+    icon: "RefreshCw",
+    features: ["Substantial ROI Reduction", "Top-Up Loan Facility", "Lower Monthly Outflow"],
+    color: "from-amber-600 to-yellow-700",
+    badge: "High Savings"
+  },
+  {
+    id: "personal-loan",
+    title: "Personal Loan",
+    category: "Personal & Immediate",
+    description: "Unsecured personal financing for medical requirements, family milestones, travel, or debt restructuring with quick processing.",
+    icon: "Wallet",
+    features: ["No Collateral Needed", "Quick Sanction Windows", "Flexible Repayment"],
+    color: "from-royal-600 to-navy-800",
+    badge: "Quick Disbursal"
+  },
+  {
+    id: "personal-loan-balance-transfer",
+    title: "Personal Loan Balance Transfer",
+    category: "Debt Restructuring",
+    description: "Transfer existing personal loans to lower interest rates to reduce EMI, cut overall interest burden, and improve monthly cash flow.",
+    icon: "Layers",
+    features: ["Reduce Monthly EMI", "Loan Consolidation", "Top-Up Available"],
+    color: "from-emerald-600 to-teal-800",
+    badge: "Cash Flow Saver"
+  },
+  {
+    id: "business-loan",
+    title: "Business Loan",
+    category: "Commercial & MSME",
+    description: "Tailored financing for MSMEs, enterprise growth, equipment purchase, infrastructure expansion, and working capital needs.",
+    icon: "Building2",
+    features: ["Working Capital Solutions", "Customized Tenures", "Secured & Unsecured"],
+    color: "from-slate-800 to-navy-900",
+    badge: "MSME Focused"
+  },
+  {
+    id: "fresh-property-purchase",
+    title: "Fresh Property Purchase",
+    category: "Commercial & Residential",
+    description: "Structured credit solutions for new residential units, commercial office spaces, shop purchases, and land developments.",
+    icon: "House",
+    features: ["Direct Builder Tie-Ins", "Higher Eligibility Limits", "Pan-India Verification"],
+    color: "from-indigo-800 to-navy-950",
+    badge: "Comprehensive"
   }
 ];
+
+export const cibilInfo = {
+  heading: "CIBIL Cases Also Handled",
+  cardTitle: "CIBIL CASES",
+  cardSubtitle: "Loan Profile Assistance",
+  supportingText: "Assistance is available for eligible customers with CIBIL-related loan-profile requirements, subject to lender policies and eligibility.",
+  disclaimer: "Interest rates, approvals, and loan sanctions depend solely on individual credit history, lender risk parameters, and documentation. No guaranteed approval or score enhancement is promised."
+};
 
 export const whyChooseCards = [
   {
@@ -212,32 +284,32 @@ export const whyChooseCards = [
   },
   {
     number: "02",
-    title: "270+ Institutional Partners",
-    description: "Direct ties with leading public banks, private lenders, NBFCs, and housing finance companies.",
+    title: "270+ Institutional Network",
+    description: "Extensive institutional network across premier public banks, private lenders, NBFCs, and HFCs.",
     icon: "Building2"
   },
   {
     number: "03",
-    title: "Pan-India Cases",
+    title: "CIBIL Cases Handled",
+    description: "Guidance and institutional evaluation for eligible borrowers with complex CIBIL profiles, subject to lender norms.",
+    icon: "BadgeCheck"
+  },
+  {
+    number: "04",
+    title: "Pan-India Reach",
     description: "Seamless application assistance and case processing across all states and major hubs in India.",
     icon: "Compass"
   },
   {
-    number: "04",
+    number: "05",
     title: "Since 2012",
     description: "Over a decade of seasoned market experience navigating evolving financial regulations and credit lines.",
     icon: "History"
   },
   {
-    number: "05",
-    title: "Multiple Loan Solutions",
-    description: "From micro-cash solutions to multi-crore business expansions and mortgage transfers under one roof.",
-    icon: "Layers"
-  },
-  {
     number: "06",
-    title: "Transparent Process",
-    description: "Zero hidden charges, clear comparison sheets, and objective institutional match recommendations.",
+    title: "Transparent Advisory",
+    description: "Zero hidden charges, objective institutional match comparisons, and clear disclosures.",
     icon: "SearchCheck"
   }
 ];
@@ -248,7 +320,7 @@ export const processSteps = [
     title: "Share Your Requirement",
     description: "Tell us the type, size, and timeline of the financing required via form, phone, or WhatsApp.",
     icon: "MessageSquare",
-    duration: "Day 1"
+    duration: "Step 1"
   },
   {
     step: "02",
@@ -259,7 +331,7 @@ export const processSteps = [
   },
   {
     step: "03",
-    title: "Partner Matching",
+    title: "Institutional Matching",
     description: "Identify and shortlist the most suitable institutional financing options with optimal interest rates.",
     icon: "GitCompare",
     duration: "Rate Match"
@@ -267,42 +339,66 @@ export const processSteps = [
   {
     step: "04",
     title: "Loan Processing",
-    description: "Proceed with the selected partner institution for documentation, sanction, and disbursement.",
+    description: "Proceed with the selected institutional partner for documentation, sanction, and disbursement.",
     icon: "CheckCircle",
     duration: "Smooth Sanction"
   }
 ];
 
+// 01. Government & Public Sector Banks (MUST APPEAR FIRST)
 export const psuBanks = [
-  { name: "State Bank of India", cap: "₹ 5,00,179.88 CR", tag: "Largest PSU Bank" },
-  { name: "Bank of Baroda", cap: "₹ 1,00,272.71 CR", tag: "Top PSU Lender" },
-  { name: "Punjab National Bank", cap: "₹ 83,518.55 CR", tag: "Premier National Bank" },
-  { name: "Union Bank of India", cap: "₹ 79,239.07 CR", tag: "Major Institutional Bank" },
-  { name: "Indian Overseas Bank", cap: "₹ 74,343.19 CR", tag: "Leading Retail Partner" },
-  { name: "Canara Bank", cap: "₹ 71,005.06 CR", tag: "Pan-India Network" },
-  { name: "Indian Bank", cap: "₹ 51,094.22 CR", tag: "Established Network" },
-  { name: "UCO Bank", cap: "₹ 45,014.18 CR", tag: "Govt. of India Undertaking" },
-  { name: "Bank of India", cap: "₹ 42,533.46 CR", tag: "National Footprint" },
-  { name: "Central Bank of India", cap: "₹ 38,300.30 CR", tag: "Public Sector Partner" },
+  { name: "State Bank of India", short: "SBI", tag: "Largest Public Sector Bank", code: "01" },
+  { name: "Bank of Baroda", short: "BOB", tag: "Premier Public Lender", code: "02" },
+  { name: "Punjab National Bank", short: "PNB", tag: "Nationalized Banking Giant", code: "03" },
+  { name: "Canara Bank", short: "CANARA", tag: "Pan-India Network", code: "04" },
+  { name: "Union Bank of India", short: "UBI", tag: "Major Institutional Bank", code: "05" },
+  { name: "Indian Bank", short: "IB", tag: "Established PSU Network", code: "06" },
+  { name: "Bank of India", short: "BOI", tag: "National Footprint", code: "07" },
+  { name: "Central Bank of India", short: "CBI", tag: "Govt. of India Enterprise", code: "08" },
+  { name: "Indian Overseas Bank", short: "IOB", tag: "Leading Retail PSU", code: "09" },
+  { name: "UCO Bank", short: "UCO", tag: "Public Sector Undertaking", code: "10" },
 ];
 
+// 02. Private Banks & Scheduled Commercial Lenders
 export const majorPrivateBanks = [
-  "HDFC Bank",
-  "ICICI Bank",
-  "Axis Bank",
-  "Kotak Mahindra Bank",
-  "IDFC FIRST Bank",
-  "Bajaj Housing Finance",
-  "Tata Capital",
-  "Piramal Finance",
-  "L&T Finance",
-  "Aditya Birla Capital"
+  { name: "HDFC Bank", short: "HDFC", tag: "Premier Private Bank", code: "PR-01" },
+  { name: "ICICI Bank", short: "ICICI", tag: "Commercial Banking Leader", code: "PR-02" },
+  { name: "Axis Bank", short: "AXIS", tag: "Retail & Corporate Solutions", code: "PR-03" },
+  { name: "Kotak Mahindra Bank", short: "KOTAK", tag: "Competitive Lending Desk", code: "PR-04" },
+  { name: "IDFC FIRST Bank", short: "IDFC", tag: "Customer-Centric Financing", code: "PR-05" },
+  { name: "IndusInd Bank", short: "INDUS", tag: "Pan-India Commercial", code: "PR-06" },
+  { name: "Federal Bank", short: "FED", tag: "Scheduled Commercial Bank", code: "PR-07" },
+  { name: "Yes Bank", short: "YES", tag: "Structured Retail Credit", code: "PR-08" },
+];
+
+// 03. Housing Finance Companies (HFCs) & Leading NBFCs
+export const nbfcInstitutions = [
+  { name: "Bajaj Housing Finance", short: "BAJAJ", tag: "Premier Mortgage Provider" },
+  { name: "Tata Capital", short: "TATA", tag: "Trusted Financial Solutions" },
+  { name: "Piramal Finance", short: "PIRAMAL", tag: "Diversified Credit Partner" },
+  { name: "L&T Finance", short: "L&T", tag: "Infrastructure & Retail" },
+  { name: "Aditya Birla Capital", short: "ABC", tag: "Comprehensive Financial Services" },
+  { name: "LIC Housing Finance", short: "LICHFL", tag: "Specialized Home Finance" },
+  { name: "PNB Housing Finance", short: "PNBHFL", tag: "Pan-India Mortgage Solutions" },
+  { name: "Godrej Capital", short: "GODREJ", tag: "Flexible Business & Home Loans" },
 ];
 
 export const partnerInstitutions = [
-  { type: "Public Sector Banks", count: "Top 10 PSU Banks (SBI, BOB, PNB...)", icon: "Landmark" },
-  { type: "Private Commercial Banks", count: "HDFC, ICICI, Axis & Premier Lenders", icon: "Building" },
-  { type: "Housing Finance Companies (HFCs)", count: "50+ Specialized Mortgage Lenders", icon: "Home" },
-  { type: "Non-Banking Financial Companies (NBFCs)", count: "180+ Recognized Partners", icon: "Coins" },
+  { type: "Government / PSU Banks", count: "Top 10 PSU Banks (SBI, BOB, PNB, Canara...)", icon: "Landmark", order: "01" },
+  { type: "Private Commercial Banks", count: "HDFC, ICICI, Axis, Kotak & Premier Lenders", icon: "Building2", order: "02" },
+  { type: "Housing Finance Companies", count: "Specialized Mortgage & HFC Institutions", icon: "Home", order: "03" },
+  { type: "Recognized NBFCs", count: "Tata, Bajaj, Piramal, L&T & Approved Institutions", icon: "Coins", order: "04" },
 ];
+
+// Reusable Popup Configuration (Requirement 11 & 12)
+export const popupConfig = {
+  tag: "Institutional Assistance",
+  title: "Looking for a Home Loan?",
+  subtitle: "Get assistance with your loan application and eligibility process.",
+  description: "Explore competitive bank rates and structured balance transfers with professional advisory and 0% customer fees.",
+  buttonText: "Check Eligibility",
+  badge: "0% Customer Fees",
+  targetLoan: "Home Loan"
+};
+
 

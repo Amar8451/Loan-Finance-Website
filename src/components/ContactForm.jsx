@@ -6,10 +6,10 @@ const loanTypes = [
   "Home Loan",
   "Home Loan Transfer",
   "Personal Loan",
-  "Personal Loan Consolidation",
+  "Personal Loan Balance Transfer",
   "Business Loan",
-  "Vehicle Loan",
-  "Property Purchase",
+  "Fresh Property Purchase",
+  "CIBIL Profile Assessment",
   "Other"
 ];
 

@@ -1,12 +1,14 @@
 import React from 'react';
-import { Wallet, TrendingUp, Car, Home, ArrowRight, CheckCircle2, Sparkles, Building, Layers } from 'lucide-react';
+import { Home, RefreshCw, Wallet, Layers, Building2, ArrowRight, CheckCircle2, Sparkles } from 'lucide-react';
 import { loanSolutions } from '../data/loanData';
 
 const iconMap = {
-  Wallet: Wallet,
-  TrendingUp: TrendingUp,
-  Car: Car,
   Home: Home,
+  RefreshCw: RefreshCw,
+  Wallet: Wallet,
+  Layers: Layers,
+  Building2: Building2,
+  House: Home,
 };
 
 export default function LoanSolutions({ onSelectLoan }) {
@@ -38,20 +40,20 @@ export default function LoanSolutions({ onSelectLoan }) {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-royal-800/50 border border-royal-500/30 text-amber-300 text-xs sm:text-sm font-semibold mb-4 tracking-wide uppercase">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-            End-to-End Financing Options
+            Institutional Financing Solutions
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-heading tracking-tight">
-            Comprehensive <span className="text-gradient-gold">Multi-Loan Universe</span>
+            Comprehensive <span className="text-gradient-gold">Loan Solutions</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-            Whether you require instant liquidity for unexpected emergencies or structured funding for large commercial scale-ups, our 270+ institutional network has you covered.
+            From new property purchases to strategic balance transfers and MSME business loans, our 270+ institutional network connects you to optimal bank rate structures.
           </p>
         </div>
 
-        {/* 4 Large Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        {/* 6 Service Cards Grid (3 Columns on Desktop, 2 on Tablet, 1 on Mobile) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {loanSolutions.map((item) => {
-            const IconComp = iconMap[item.icon] || Layers;
+            const IconComp = iconMap[item.icon] || Home;
 
             return (
               <div
@@ -62,13 +64,13 @@ export default function LoanSolutions({ onSelectLoan }) {
                 <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-royal-500 via-amber-400 to-royal-600 opacity-60 group-hover:opacity-100 transition-opacity" />
 
                 <div>
-                  {/* Category Pill */}
+                  {/* Category Pill & Badge */}
                   <div className="flex items-center justify-between mb-5">
                     <span className="text-[11px] font-bold uppercase tracking-wider text-amber-400 px-2.5 py-1 rounded-full bg-amber-400/10 border border-amber-400/20">
                       {item.category}
                     </span>
-                    <span className="text-xs text-slate-500 font-semibold group-hover:text-slate-400 transition-colors">
-                      0% Fee
+                    <span className="text-xs px-2 py-0.5 rounded-full font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
+                      {item.badge}
                     </span>
                   </div>
 
@@ -78,7 +80,7 @@ export default function LoanSolutions({ onSelectLoan }) {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-extrabold text-white mb-3 group-hover:text-amber-300 transition-colors font-heading">
+                  <h3 className="text-xl font-extrabold text-white mb-2.5 group-hover:text-amber-300 transition-colors font-heading">
                     {item.title}
                   </h3>
 
@@ -121,8 +123,8 @@ export default function LoanSolutions({ onSelectLoan }) {
               <Layers className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-white">Need a custom loan structure or top-up?</h4>
-              <p className="text-xs text-slate-400">Our loan specialists assess pan-India proposals across 270+ institutional lenders.</p>
+              <h4 className="text-sm font-bold text-white">Need a customized loan structure or top-up?</h4>
+              <p className="text-xs text-slate-400">Our loan specialists assess pan-India proposals across 270+ institutional lenders with 0% fees.</p>
             </div>
           </div>
           <button
