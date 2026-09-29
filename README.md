@@ -248,16 +248,6 @@ npx netlify deploy --prod --dir=dist
 1. In `vite.config.js`, set `base: '/<repository-name>/'`.
 2. Build and push the `dist/` directory to the `gh-pages` branch.
 
----
 
-## 📞 Contact & Business Inquiries
 
-- **Organization:** Siyaram Loans & Finance
-- **Proprietor:** Ramesh Sawant
-- **Phone / WhatsApp:** [+91 82919 19192](tel:+918291919192)
-- **Email:** [siyaramloans4u@gmail.com](mailto:siyaramloans4u@gmail.com)
-- **Consultation Fee:** 0% (100% Free Advisory)
-
----
-
-*© Siyaram Loans & Finance. All rights reserved. Loan approvals and interest rates are subject to panel banking partner guidelines and applicant eligibility.*
+*©  Loans & Finance. All rights reserved. Loan approvals and interest rates are subject to panel banking partner guidelines and applicant eligibility.*
